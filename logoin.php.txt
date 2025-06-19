@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>:: BETFLIX.LTD</title>
+  <meta name="description" content="GAMELOT5BET คือผู้ให้บริการสล็อตออนไลน์บนมือถือ ที่รวบรวมแบรนด์เกมสล็อตออนไลน์ยอดนิยมในท้องตลาดทั้งในประเทศ และต่างประเทศ มาอยู่ในรูปแบบ Platform ที่ทันสมัย ทั้งในเรื่องความปลอดภัย ความรวดเร็วในการให้บริการ">
+  <meta name="keywords" content="สล็อต, slotxo, live22, สล็อตออนไลน์">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/swiper.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link href="assets/css/main.css?v=3" rel="stylesheet" type="text/css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" 
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  <link href="assets/css/jquery-confirm.min.css" rel="stylesheet" type="text/css" />
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  	<style>
+		  body{
+			font-family: 'Mitr', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+			background: url(assets/img/bg.png) center #000;
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+            background-attachment: fixed;
+		  }
+		  .black-box{
+			
+			background: rgb(0,0,0);
+background: linear-gradient(45deg, rgba(0,0,0,1) 10%, rgba(29,29,29,1) 50%, rgba(0,0,0,1) 100%);    /* box-shadow: 0 3px 6px rgb(153, 155, 168, .2); */
+    min-height: 60px;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    overflow: hidden;
+      }
+      
+      .navigation{
+        background: rgb(26,0,47);
+
+      color:white;
+      }
+      .navigation li a{
+        color:white;
+      }
+      .navigation li a:hover{
+        color:yellow;
+      }
+
+      .bg-main{
+              }
+      section.main-menu{
+        margin-top: 30px;
+      }
+	</style>
+</head>
+<body class="fadeIn animated">
+
+       <div class="navigation">
+<!--         <div align="center" style="font-size:10px; line-height:30px; color:#b3b3b3;">
+          <i class="fa fa-heart" aria-hidden="true"></i> By <a href="https://isp26.com/" target="_blank" style="font-size: 10px;cursor: pointer;">ISP26</a>
+        </div> -->
+        <div class="container">
+          <ul>
+            <li>
+              <a href="https://member.911s.live">
+                <i class="fas fa-home"></i>
+                <p class="font11" style="margin:-5px 0 0 0;">หน้าแรก</p>
+              </a>
+            </li>
+           
+                         
+              <li>
+              <a href="login.php">
+              <i class="fas fa-sign-in-alt"></i>
+                <p class="font11" style="margin:-5px 0 0 0;">เข้าสู่ระบบ</p>
+              </a>
+            </li> <li>
+
+            <a href="https://lin.ee/Hifu5nA">
+            <i class="fas fa-lock"></i>
+              <p class="font11" style="margin:-5px 0 0 0;">ลืมรหัสผ่าน</p>
+            </a>
+            </li>
+            <li>
+              <a href="register.php">
+              <i class="fas fa-user-plus"></i>
+                <p class="font11" style="margin:-5px 0 0 0;">สมัครสมาชิก</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://lin.ee/Hifu5nA">
+              <i class="fas fa-comments"></i>
+                <p class="font11" style="margin:-5px 0 0 0;">ติดต่อเรา</p>
+              </a>
+            </li>
+                      </ul>
+        </div>
+      </div> 
+
+
+
+
+     
+
+<style>
+	/* Coded with love by Mutiullah Samim */
+    body,
+		html {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			
+		}
+		.user_card {
+			height: 400px;
+			/*width: 350px;*/
+			margin-top: auto;
+            margin-bottom: auto;
+            /*background: rgb(2,91,207);
+background: linear-gradient(0deg, rgba(2,91,207,1) 0%, rgba(2,15,50,1) 100%);*/
+			position: relative;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			padding: 30px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 5px;
+            color:#FFF;
+
+		}
+		.brand_logo_container {
+			/*position: absolute;
+			height: 170px;*/
+			
+			top: -35px;
+			border-radius: 50%;
+			
+			padding: 10px;
+			text-align: center;
+		}
+		.brand_logo {
+			/*height: 150px;*/
+			
+			
+		}
+		.form_container {
+			/*margin-top: 100px;*/
+		}
+		.login_btn {
+			width: 100%;
+			background: rgb(189,163,94);
+    background: linear-gradient(169deg, rgba(189,163,94,1) 0%, rgba(237,227,153,1) 50%, rgba(189,163,94,1) 100%);
+			color: black !important;
+		}
+		.login_btn:focus {
+			box-shadow: none !important;
+			outline: 0px !important;
+		}
+		.login_container {
+			padding: 0 2rem;
+		}
+		.input-group-text {
+			background: #000 !important;
+			color: white !important;
+			border: 0 !important;
+			border-radius: 0.25rem 0 0 0.25rem !important;
+		}
+		.input_user,
+		.input_pass:focus {
+			box-shadow: none !important;
+			outline: 0px !important;
+		}
+		.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+			background-color: #c0392b !important;
+        }
+        </style>
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    
+	<div class="container h-100">
+		<div class="d-flex justify-content-center h-100">
+			<div class="user_card bg-main">
+				<div class="d-flex justify-content-center">
+					<div class="brand_logo_container">
+						<img src="https://911s.live/assets/img/newlogo.png" class="brand_logo img-fluid" alt="Logo" style="max-width:350px;">
+					</div>
+				</div>
+				<div class="d-flex justify-content-center form_container">
+					<form id="login-form">
+						<div class="input-group mb-3">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-user"></i></span>
+							</div>
+							<input type="text" name="phone" class="form-control input_user" type="phone" maxlength="10" value="" placeholder="เบอร์โทรศัพท์">
+						</div>
+						<div class="input-group mb-2">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-key"></i></span>
+							</div>
+							<input type="password" name="password" class="form-control input_pass" value="" placeholder="รหัสผ่าน">
+						</div>
+						
+							<div class="d-flex justify-content-center mt-3 login_container">
+				 	<button type="submit" name="button" class="btn login_btn">เข้าสู่ระบบ</button>
+				   </div>
+					</form>
+				</div>
+		
+				<div class="mt-4">
+					<div class="d-flex justify-content-center links">
+						ยังไม่มีบัญชี? <a href="register.php" class="ml-2" style="color:yellow;">สมัครสมาชิก</a>
+					</div>
+					<div class="d-flex justify-content-center links">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" 
+        integrity="sha256-9/" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" 
+    integrity="sha256-" crossorigin="anonymous"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
+<script src="./assets/js/loadPageSection.js"></script>
+<script src="./assets/js/slotm.min.js"></script>
+
+<script>
+       
+
+
+
+</script>
+
+    
+<script>
+
+    $(function() {
+    
+        $('#login-form').on('submit', function(e) {
+            e.preventDefault();
+            $('#loader').show();
+            var form = this;
+            var formData = new FormData(form);
+            fetch('action.php?action=Login', {
+                method: 'POST',
+                body: formData
+            }).then((res) => {
+                if (!res.ok) throw new Error(res.statusText);
+                return res.json();
+            }).then((data) => {
+                $('#loader').hide();
+                if (data.success) {
+                    // location.href = './home.php';
+                    // location.href = './home.php';
+                    /*var content = loadPageSection('./', '#user-zone', (r, err) => {
+                        console.log(r, err)
+                        var userZone = document.querySelector('#user-zone');
+                        userZone.innerHTML = '';
+                        userZone.appendChild(r);
+                        
+                    });*/
+
+                    window.location.href="index.php";
+                } else {
+                    swal('ขออภัย', data.text, 'error');
+                    console.error(data.log);
+                }
+            }).catch((err) => {
+                $('#loader').hide();
+                swal('ขออภัย', 'พบข้อบกพร่องทางเทคนิค โปรดลองอีกครั้ง หรือติดต่อเจ้าหน้าที่ทางไลน์เพื่อขอรับความช่วยเหลือ', 'error');
+                console.error(data.log);
+            });
+        });
+
+        
+    });
+
+</script>
+<!-- Mant -->
+<!-- Modal -->
+<div class="modal fade" id="pkalertmant5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h1 class="modal-title" id="exampleModalLabel">BETFLIX THAILAND</h1>
+      </div>
+      <div class="modal-body text-center">
+	  ประกาศ !!!
+หากลูกค้าที่ทำรายการส่อทุจริตกับทางเว็บ
+&amp;quot;ใช้ชื่อบัญชีที่ทำรายการฝากไม่ตรงกับชื่อที่ทำการสมัครมา ทางบริษัทจะไม่คืนเครดิตและไม่ทำรายการให้ทุกกรณี &amp;quot;      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">รับทราบ</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script>
+    $('#pkalertmant5').modal('show');
+    </script>
+    
+</body>
+</html>

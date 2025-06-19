@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@rarible/sdk": "^0.13.116"
+  }
+}
