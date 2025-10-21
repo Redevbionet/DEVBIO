@@ -1,0 +1,12 @@
+# Create a folder under the drive root
+$ mkdir actions-runner; cd actions-runnerCopied!# Download the latest runner package
+$ Invoke-WebRequest -Uri https://github.com/actions/runner/releases/download/v2.329.0/actions-runner-win-x64-2.329.0.zip -OutFile actions-runner-win-x64-2.329.0.zip# Optional: Validate the hash
+$ if((Get-FileHash -Path actions-runner-win-x64-2.329.0.zip -Algorithm SHA256).Hash.ToUpper() -ne 'f60be5ddf373c52fd735388c3478536afd12bfd36d1d0777c6b855b758e70f25'.ToUpper()){ throw 'Computed checksum did not match' }# Extract the installer
+$ Add-Type -AssemblyName System.IO.Compression.FileSystem ; [System.IO.Compression.ZipFile]::ExtractToDirectory("$PWD/actions-runner-win-x64-2.329.0.zip", "$PWD")
+
+# Create the runner and start the configuration experience
+$ ./config.cmd --url https://github.com/Redevbionet/VM --token BA4CKU2M7P3APV3K2YID4ETI634MW# Run it!
+$ ./run.cmd
+
+# Use this YAML in your workflow file for each job
+runs-on: self-hosted
