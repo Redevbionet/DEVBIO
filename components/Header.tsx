@@ -1,9 +1,10 @@
 
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { MenuIcon, XIcon } from './icons';
+import { MenuIcon, XIcon, LogoutIcon } from './icons';
+import { AuthContext } from '../auth/AuthContext';
 
-const navLinks = [
+const baseNavLinks = [
   { to: '/', label: 'หน้าหลัก' },
   { to: '/about', label: 'เกี่ยวกับเรา' },
   { to: '/services', label: 'บริการ' },
@@ -14,10 +15,24 @@ const navLinks = [
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const auth = useContext(AuthContext);
+
+  if (!auth) return null; // Should not happen within AuthProvider
+
+  const { isAuthenticated, logout } = auth;
+
+  const navLinks = isAuthenticated
+    ? [...baseNavLinks.slice(0, 5), { to: '/dashboard', label: 'แดชบอร์ด' }, baseNavLinks[5]]
+    : baseNavLinks;
 
   const activeLinkStyle = {
     color: '#06b6d4', // cyan-500
     textShadow: '0 0 5px #06b6d4',
+  };
+  
+  const handleLogout = () => {
+    logout();
+    setIsOpen(false);
   };
 
   return (
@@ -28,7 +43,7 @@ const Header: React.FC = () => {
             Redevbio<span className="text-cyan-400">net</span>
           </Link>
           
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navLinks.map((link) => (
               <NavLink
                 key={link.to}
@@ -39,6 +54,17 @@ const Header: React.FC = () => {
                 {link.label}
               </NavLink>
             ))}
+            <div className="w-px h-6 bg-gray-700"></div>
+            {isAuthenticated ? (
+               <button onClick={handleLogout} className="flex items-center text-gray-300 hover:text-cyan-400 transition duration-300 font-medium">
+                 <LogoutIcon className="w-5 h-5 mr-2" />
+                 ออกจากระบบ
+               </button>
+            ) : (
+              <NavLink to="/login" className="flex items-center text-gray-300 hover:text-cyan-400 transition duration-300 font-medium bg-gray-800 px-4 py-2 rounded-full hover:bg-gray-700">
+                เข้าสู่ระบบ
+              </NavLink>
+            )}
           </div>
 
           <div className="md:hidden">
@@ -63,6 +89,18 @@ const Header: React.FC = () => {
                   </NavLink>
                 </li>
               ))}
+              <li className="pt-4 mt-4 border-t border-gray-700">
+                {isAuthenticated ? (
+                   <button onClick={handleLogout} className="w-full text-left flex items-center text-gray-300 hover:text-cyan-400 transition duration-300 font-medium">
+                     <LogoutIcon className="w-5 h-5 mr-2" />
+                     ออกจากระบบ
+                   </button>
+                ) : (
+                  <NavLink to="/login" onClick={() => setIsOpen(false)} className="block text-gray-300 hover:text-cyan-400 transition duration-300 font-medium">
+                    เข้าสู่ระบบ
+                  </NavLink>
+                )}
+               </li>
             </ul>
           </div>
         )}

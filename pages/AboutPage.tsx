@@ -57,7 +57,7 @@ const AboutPage: React.FC = () => {
         <div className="text-center bg-gray-800/40 p-10 rounded-xl border border-gray-700 mb-20">
           <h2 className="text-3xl font-bold text-white mb-4">ทีมงานผู้เชี่ยวชาญ</h2>
           <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            ทีมงานของเราประกอบด้วย <span className="text-cyan-400 font-semibold">Developer และผู้เชี่ยวชาญด้าน System Development และ Storage System</span> ที่มีประสบการณ์ยาวนาน เรามีความหลงใหลในการแก้ปัญหาที่ซับซ้อนและมุ่งมั่นที่จะส่งมอบผลงานที่มีคุณภาพสูงสุดให้กับลูกค้าของเราทุกคน
+            ทีมงานของเราประกอบด้วย <span className="text-cyan-400 font-semibold"> Developer และผู้เชี่ยวชาญด้าน System Development และ Storage System</span> ที่มีประสบการณ์ยาวนาน เรามีความหลงใหลในการแก้ปัญหาที่ซับซ้อนและมุ่งมั่นที่จะส่งมอบผลงานที่มีคุณภาพสูงสุดให้กับลูกค้าของเราทุกคน
           </p>
         </div>
 

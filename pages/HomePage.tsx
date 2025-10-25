@@ -46,7 +46,7 @@ const HomePage: React.FC = () => {
         </div>
         <div className="relative z-20 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight tracking-tighter animate-fade-in-down">
-            Redevbionet: ผู้บุกเบิกโซลูชันระบบจัดเก็บข้อมูลและ <span className="text-cyan-400">ERP แห่งอนาคต</span>
+              ผู้บุกเบิกโซลูชันระบบจัดเก็บข้อมูลและ <span className="text-cyan-400">ERP แห่งอนาคต</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
             เราเชี่ยวชาญในการพัฒนาและปกป้องระบบจัดเก็บข้อมูลที่สำคัญ พร้อมนำเสนอการแสดงผลข้อมูล Circle Soft ERP ที่ทรงพลัง
